@@ -168,7 +168,7 @@ nav{
 .event{
     display: flex;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .left-event{
     border-radius: 10px;
@@ -370,7 +370,14 @@ nav{
 .setting-links{
     display: flex;
     align-items: center;
-    margin: 15px 0;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.setting-links:hover{
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #CFD2CF;
 }
 .setting-links .setting-icon{
     width: 38px;
@@ -392,9 +399,11 @@ nav{
 .sidebar-button:hover{
     cursor: pointer;
 }
-.enclose-chat1{
-    max-height: 0;
-    overflow: hidden;
+.seeMore-button:hover{
+  cursor: pointer;
+}
+.enclose-chat{
+   margin-bottom: 15px;
 }
 #dark-btn{
     position: absolute;
@@ -419,7 +428,7 @@ nav{
     padding-left: 23px;
     background-color: #333131;
 }
-.sidebar-button{
+.sidebar-button, .seeMore-button{
     background-color: var(--bg-color);
     border: none;
     color: #2aa15f;
