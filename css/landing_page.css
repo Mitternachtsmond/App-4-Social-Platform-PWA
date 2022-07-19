@@ -35,7 +35,9 @@ nav{
 .logo{
     width: 160px;
     margin-right: 45px;
-
+}
+.nav-user-icon {
+  margin: 40px;
 }
 .nav-left, .nav-right{
     display: flex;
