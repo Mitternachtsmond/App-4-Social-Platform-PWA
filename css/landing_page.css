@@ -4,7 +4,9 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
-
+html{
+    resize: none;
+}
 :root{
     --body-color: #efefef;
     --nav-color: #2aa15f;
@@ -43,6 +45,7 @@ nav{
     display: flex;
     align-items: center;
     position: sticky;
+    background-color: var(--nav-color);
 
 }
 .nav-left ul li{
@@ -59,7 +62,8 @@ nav{
     cursor: pointer;
 }
 .nav-user-icon{
-    margin: 30px;
+    margin: 40px;
+    margin-right: 100px;
 }
 .search-box{
     background: #efefef;
@@ -86,7 +90,7 @@ nav{
     content: '';
     width: 7px;
     height: 7px;
-    border: 2px solid #fff;
+    border: 2px solid var(--bg-color);
     border-radius: 50%;
     background: #41db51;
     position: absolute;
@@ -385,6 +389,13 @@ nav{
 .setting-links .arrow{
     margin-right: 20px;
 }
+.sidebar-button:hover{
+    cursor: pointer;
+}
+.enclose-chat1{
+    max-height: 0;
+    overflow: hidden;
+}
 #dark-btn{
     position: absolute;
     top: 20px;
@@ -407,4 +418,21 @@ nav{
 #dark-btn.dark-btn-on{
     padding-left: 23px;
     background-color: #333131;
+}
+.sidebar-button{
+    background-color: var(--bg-color);
+    border: none;
+    color: #2aa15f;
+}
+
+@media (max-width: 1004px) {
+    .right-side-bar{
+        margin: 10px;
+    }
+    .conversation{
+        margin-right: 10px;
+    }
+    .imp-links{
+        margin-right: 10px;
+    }
 }

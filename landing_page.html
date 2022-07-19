@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/landing_page.css">
+    <link rel="stylesheet" href="landing_page.css">
     <title>IITI Community</title>
 </head>
 <body>
     <nav>
         <div class="nav-left">
             <img src="images/socialbook_img/images/logo.png" class="logo">
-            <ul>
+            <!-- <ul>
                 <li>
                     <img src="images/socialbook_img/images/notification.png" alt="">
                 </li>
@@ -21,9 +21,9 @@
                 <li>
                     <img src="images/socialbook_img/images/video.png" alt="">
                 </li>
-            </ul>
+            </ul> -->
         </div>
-        <div class="nav-right" style="background-color: #2aa15f; height: 55.05px;">
+        <div class="nav-right" style="height: 55.05px;">
            <div class="search-box">
             <img src="images/socialbook_img/images/search.png">
             <input type="text" placeholder="Search">
@@ -52,7 +52,7 @@
             <img src="Images/socialbook_img/images/feedback.png">
             <div>
                 <p>Give Feedback</p>
-                <a href="#">Help us to Improve</a>
+                <a href="mailto:spandan.tech999@gmail.com">Help us to Improve</a>
             </div>
         </div>
         <hr>
@@ -80,16 +80,16 @@
             <div class="imp-links">
                 <a href="#"><img src="images/socialbook_img/images/news.png">Latest Activity</a>
                 <a href="#"><img src="images/socialbook_img/images/friends.png">Friends</a>
-                <a href="#"><img src="images/socialbook_img/images/group.png">Group</a>
-                <a href="#"><img src="images/socialbook_img/images/watch.png">Watch</a>
-                <a href="#">See more</a>
+                <a href="#" style="color: #626262;"><img src="images/socialbook_img/images/group.png">Groups</a>
+                <!-- <a href="#"><img src="images/socialbook_img/images/watch.png">Watch</a>
+                <a href="#">See more</a> -->
             </div>
             <div class="shortcut-links">
-                <p>Your Shortcuts</p>
+                <!-- <p>Your Shortcuts</p>
                 <a href="#"><img src="images/socialbook_img/images/shortcut-1.png">Web Developers</a>
                 <a href="#"><img src="images/socialbook_img/images/shortcut-2.png">Web Design</a>
                 <a href="#"><img src="images/socialbook_img/images/shortcut-3.png">Full Stack</a>
-                <a href="#"><img src="images/socialbook_img/images/shortcut-4.png">Web Experts</a>
+                <a href="#"><img src="images/socialbook_img/images/shortcut-4.png">Web Experts</a> -->
             </div>
         </div>
                          <!-- -------------------------Mid Content Bar--------------------- --------------->
@@ -198,9 +198,12 @@
             </div>
           </div>
           <div class="sidebar-title">
-            <h4>Conversation</h4>
-            <a href="#">Hide Chat</a>
-          </div>
+            <h4 class="conversation">Conversation</h4>
+            <button class="sidebar-button" onclick="HideChatToggle()">
+                Hide Chat
+            </button>
+            </div>
+        <div class="enclose-chat">
           <div class="online-list">
             <div class="online">
                 <img src="images/socialbook_img/images/member-1.png">
@@ -219,11 +222,13 @@
             </div>
             <p>Samona Rose</p>
           </div>
+          </div>
+          </div>
          </div>
         </div>
     <div class="footer">
         <p>Copyright 2022 - IIT Indore</p>
     </div>
-    <script src="js/landing_page.js"></script>
+    <script src="landing_page.js"></script>
 </body>
 </html>

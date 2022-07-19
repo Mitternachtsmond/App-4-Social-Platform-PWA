@@ -1,8 +1,12 @@
 var settingsheight1 = document.querySelector(".settings");
 var darkbtn = document.getElementById("dark-btn");
+var chatheight1 = document.querySelector(".enclose-chat");
 
 function settingsMenuToggle(){
     settingsheight1.classList.toggle("settings-height1");
+}
+function HideChatToggle(){
+    chatheight1.classList.toggle("enclose-chat1");
 }
 darkbtn.onclick = function(){
     darkbtn.classList.toggle("dark-btn-on");
