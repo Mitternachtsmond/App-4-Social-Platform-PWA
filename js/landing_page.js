@@ -51,3 +51,6 @@ $(".sidebar-button").on("click", function (){
 $(".seeMore-button").on("click", function (){
   $(".event").slideToggle();
 });
+$(".refresh").on("click", function (){
+  location.reload();
+})

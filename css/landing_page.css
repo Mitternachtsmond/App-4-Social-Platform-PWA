@@ -205,18 +205,23 @@ nav{
 .online-list{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.online-list:hover{
+  background-color: #EAF6F6;
 }
 .online-list .online img{
     width: 40px;
     border-radius: 50%;
 }
-.online-list .online{
+ .online{
     width: 40px;
     border-radius: 50%;
     margin-right: 15px;
 }
-.online-list .online::after{
+ .online::after{
     top: unset;
     bottom: 0;
 }
@@ -327,6 +332,15 @@ nav{
     color: #626262;
     background: transparent;
     border-radius: 4px;
+}
+.refresh:hover{
+  transition: 0.3s;
+  background-color: #CFD2CF;
+}
+.refresh:active{
+  background-color: #CFD2CF;
+  transition: 0.2s;
+  transform: scale(0.9);
 }
 .footer{
     text-align: center;
@@ -445,3 +459,9 @@ nav{
         margin-right: 10px;
     }
 }
+
+/* .img-chat:hover{
+  transition-delay: 1s;
+  transition: 0.3s;
+  transform: scale(2);
+} */
